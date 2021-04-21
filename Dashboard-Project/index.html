@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Admin Dashboard</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fab fa-apple"></i></i></span>
+                        <span class="title"><h2>Brand Name</h2></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-users"></i></span>
+                        <span class="title">Customers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-comments"></i></span>
+                        <span class="title">Message</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-question-circle"></i></span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+                <li>
+                   <a href="#">
+                        <span class="icon"><i class="fas fa-user-cog"></i></span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-key"></i></span>
+                        <span class="title">Password</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle" onclick="toggleMenu();"></div>
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <i class="fas fa-search"></i>
+                    </label>  
+                </div>
+                <div class="user">
+                    <img src="user.jpg" alt="User">
+                </div>
+            </div>
+
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="number">1024</div>
+                        <div class="name">Daily Views</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="far fa-eye"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="number">40</div>
+                        <div class="name">Sales</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fas fa-cart-arrow-down"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="number">103</div>
+                        <div class="name">Comments</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="far fa-comments"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="number">$6432</div>
+                        <div class="name">Earning</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="details">
+                <div class="recentOrder">
+                    <div class="cardHeader">
+                        <h2>Recent Orders</h2>
+                        <a href="#" class="btn">view All</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Price</td>
+                                <td>Payment</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Refrigerator</td>
+                                <td>$1100</td>
+                                <td>Paid</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+                            <tr>
+                                <td>Television</td>
+                                <td>$800</td>
+                                <td>Due</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>Speaker</td>
+                                <td>$300</td>
+                                <td>Paid</td>
+                                <td><span class="status return">Return</span></td>
+                            </tr>
+                            <tr>
+                                <td>Laptop</td>
+                                <td>$4000</td>
+                                <td>Paid</td>
+                                <td><span class="status inprogress">In Progress</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="recentCustomer">
+                    <div class="cardHeader">
+                        <h2>Recent Customers</h2>
+                    </div>
+
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgbox">
+                                        <img src="img1.jpg" alt="#">
+                                    </div>
+                                </td>
+                                <td>
+                                    <h4>Borsa <br> <span>Dhaka</span></h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgbox">
+                                        <img src="img2.jpg" alt="#">
+                                    </div>
+                                </td>
+                                <td>
+                                    <h4>Bonna <br> <span>Chittagong</span></h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgbox">
+                                        <img src="img3.jpg" alt="#">
+                                    </div>
+                                </td>
+                                <td>
+                                    <h4>Bristy <br> <span>Rajshahi</span></h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgbox">
+                                        <img src="img4.jpg" alt="#">
+                                    </div>
+                                </td>
+                                <td>
+                                    <h4>Boyshkhi <br> <span>Bogura</span></h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
